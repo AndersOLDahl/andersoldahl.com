@@ -6,6 +6,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico')}}">
+
     <title>ADahl - Resume Portfolio</title>
 
     <!-- CSS -->
@@ -118,19 +120,12 @@
 
           <div class="col-sm-4 wow bounceInLeft">
             <div class="profile-item">
-              <i class="fa fa-envelope-o"></i>
-              <h5><a href="#">andersdahl.me</a></h5>
-            </div>
-          </div>
-
-          <div class="col-sm-4 wow bounceInUp">
-            <div class="profile-item">
               <i class="fa fa-phone"></i>
               <h5>603-264-7175</h5>
             </div>
           </div>
 
-          <div class="col-sm-4 wow bounceInRight">
+          <div class="col-sm-4 wow bounceInUp">
             <div class="profile-item">
               <i class="fa fa-map-marker"></i>
               <h5>179 Calumet St., Boston, Massachusetts</h5>
@@ -179,22 +174,22 @@
               <div class="skill-bar">
                 <div class="skill-rate-on"></div>
                 <div class="skill-rate-on"></div>
+                <div class="skill-rate-on"></div>
+                <div class="skill-rate-off"></div>
+              </div>
+
+              <h5>Testing</h5>
+              <div class="skill-bar">
+                <div class="skill-rate-on"></div>
+                <div class="skill-rate-on"></div>
                 <div class="skill-rate-off"></div>
                 <div class="skill-rate-off"></div>
               </div>
 
-              <h5>First Grade Math</h5>
+              <h5>APIs and Languages</h5>
               <div class="skill-bar">
                 <div class="skill-rate-on"></div>
                 <div class="skill-rate-on"></div>
-                <div class="skill-rate-on"></div>
-                <div class="skill-rate-on"></div>
-              </div>
-
-              <h5>Perl</h5>
-              <div class="skill-bar">
-                <div class="skill-rate-off"></div>
-                <div class="skill-rate-off"></div>
                 <div class="skill-rate-off"></div>
                 <div class="skill-rate-off"></div>
               </div>
@@ -204,10 +199,12 @@
               <h3>Social Profiles</h3>
               <ul class="widget-social">
                 <li><a href="https://github.com/AndersOLDahl"><i class="fa fa-github-alt"></i></a></li>
+                <li><a href="http://stackoverflow.com/users/2529157/anders-dahl">
+                  <img src="static/images/stackoverflow.jpeg"></a></li>
                 <li><a href="https://www.linkedin.com/in/andersoldahl"><i class="fa fa-linkedin"></i></a></li>
                 <li><a href="https://www.goodreads.com/user/show/37588725-anders-dahl">
                   <i class="glyphicon glyphicon-book"></i></a></li>
-                <li><a href="http://open.spotify.com/album/3Fx5ywcLFStLdlBQ9CIOgQ">
+                <li><a href="http://open.spotify.com/user/mcwast">
                   <i class="glyphicon glyphicon-headphones"></i></a></li>
                 </ul>
             </div>
@@ -215,9 +212,11 @@
           </div><!-- .col-md-3 -->
 
           <div class="col-md-6 col-sm-12 wow bounceInRight">
-            <p>I like programming, problem-sovling, and learning. Other
-            interests include traveling, backpacking, soccer, tennis, and paragliding.
-            I am fluent in Swedish meaning I am a big fan of a smorgasbord.</p>
+            <p>I like programming, problem-sovling, and reading. Other
+            interests include traveling, backpacking, soccer, weight lifting,
+            and tennis. I am an avid concertgoer, and I enjoy finding new and
+            interesting music. Having been born in Sweden, I am a big fan of
+            smorgasbords.</p>
           </div>
 
         </div><!-- .row -->
@@ -254,19 +253,9 @@
             <div class="stat">
               <div class="stat-icon">
                 <h2><i class="fa fa-code hidden-xs"></i><span class="timer"
-                    data-to="999"></span></h2>
+                    data-to="999"></span>+</h2>
               </div>
               <h3>Line of code</h3>
-            </div>
-          </div>
-
-          <div class="col-md-3 col-sm-4 wow bounceInRight">
-            <div class="stat">
-              <div class="stat-icon">
-                <h2><i class="fa fa-child hidden-xs"></i><span class="timer"
-                    data-to="0"></span></h2>
-              </div>
-              <h3>Sad customers</h3>
             </div>
           </div>
 
@@ -302,9 +291,9 @@
                   </div>
                   <h4>Programming</h4>
                   <div class="text">
-                    <p>I like programming, and I have an interest in the
-                    principles and usages of different programming
-                    languages.</p>
+                    <p>I have a passion for programming, and I have
+                    an interest in the principles and usages of
+                    different programming languages.</p>
                   </div>
                 </div>
               </div>
@@ -312,13 +301,13 @@
               <div class="col-sm-4 wow bounceInUp">
                 <div class="service">
                   <div class="icon">
-                    <i class="fa fa-image"></i>
+                    <i class="fa fa-check-square-o"></i>
                   </div>
                   <h4>Testing</h4>
                   <div class="text">
-                    <p>I believe testing is a key component of programming.
-                    Unit tests and integrated tests are great. It makes
-                    maintaing code a lot simpler.</p>
+                    <p>I believe testing is a key component of development.
+                    Unit tests and integrated tests makes maintaining code
+                    easier.</p>
                   </div>
                 </div>
               </div>
@@ -330,7 +319,8 @@
                   </div>
                   <h4>Productivity</h4>
                   <div class="text">
-                    <p>I regularily make savailable online.</p>
+                    <p>I use various tools such as vim, git, tmux, and IDEs to
+                    help my productivity.</p>
                   </div>
                 </div>
               </div>
@@ -344,9 +334,10 @@
                   <div class="icon">
                     <i class="fa fa-code"></i>
                   </div>
-                  <h4>Clear code</h4>
+                  <h4>Clear Code</h4>
                   <div class="text">
-                    <p>I strive to write clear, concise, and readable code.</p>
+                    <p>I strive to write clear, concise, readable, and
+                    maintainable code.</p>
                   </div>
                 </div>
               </div>
@@ -356,9 +347,9 @@
                   <div class="icon">
                     <i class="fa fa-desktop"></i>
                   </div>
-                  <h4>Responsive design</h4>
+                  <h4>Design</h4>
                   <div class="text">
-                    <p>I make my UI simple and respo</p>
+                    <p>I offer simple and responsive yet effective designs.</p>
                   </div>
                 </div>
               </div>
@@ -368,9 +359,9 @@
                   <div class="icon">
                     <i class="fa fa-life-ring"></i>
                   </div>
-                  <h4>Support</h4>
+                  <h4>Documentation</h4>
+                    <p>I keep comments and wikipages up-to-date.</p>
                   <div class="text">
-                    <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
                   </div>
                 </div>
               </div>
@@ -401,7 +392,8 @@
 
           <div class="col-md-9 headline nomargin wow bounceInDown">
             <h3>I'm currently available for freelance work.</h3>
-            <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+            <p>“Choose a job you love, and you will never have to work a day in
+            your life.”</p>
             <a href="#contact" class="btn btn-default btn-custom-2 callout-btn"><i class="fa fa-paper-plane-o icon-before"></i> Contact me</a>
           </div>
 
@@ -435,8 +427,15 @@
           </div>
 
           <div class="col-md-6 col-sm-8 resume-item wow bounceInUp">
-            <h4>Computer science</h4>
-            <p>Fill in cool stuff here.</p>
+            <h4>Computer science / Mathematics</h4>
+
+            <h5>Honors</h5>
+            <p>GPA: 3.45/4.0, Dean’s List</p>
+
+            <h5>Activities</h5>
+            <p>nuACM, nuHack, NU Club Running, Weight Lifting,
+            Real Estate Investment Club</p>
+
             <hr class="hidden-xs">
           </div>
 
@@ -448,7 +447,13 @@
 
           <div class="col-md-6 col-md-offset-3 col-sm-8 resume-item wow bounceInUp">
             <h4>Student</h4>
-            <p>Fill in cool stuff here.</p>
+
+            <h5>Honors</h5>
+            <p>All-State Soccer</p>
+
+            <h5>Activities</h5>
+            <p>Science Olympiad, Envirothon, National Honors Society, Soccer, Tennis</p>
+
             <hr class="hidden-xs">
           </div>
 
@@ -467,27 +472,36 @@
           </div>
 
           <div class="col-md-6 col-sm-8 resume-item wow bounceInUp">
-            <h4>C / Ruby / Ruby on Rails / Systems / Networks / GTest</h4>
-            <p>Fill in cool stuff here.</p>
+            <h4>C / Embedded Systems / Ruby / Ruby on Rails / Networking / GTest</h4>
+            <ul>
+              <li>Developed features for the user interface built off of the
+              Ruby on Rails framework</li>
+              <li>Contributed to the development of mesh, a feature for outdoor,
+              non-wired access points</li>
+              <li>Setup Google Test and automated testing using Jenkins for the
+              embedded systems codebase</li>
+              <li>Developed 3
+              rd party special features</li>
+              <li>Wrote UI and backend tests. Ran QA tests using various tools.</li>
+            </ul>
             <hr class="hidden-xs">
           </div>
 
           <div class="col-md-3 col-sm-4 resume-place wow bounceInRight">
-            <h4><i class="fa fa-suitcase"></i> Adtran Software Engineer Co-op</h4>
+            <h4><i class="fa fa-suitcase"></i> Adtran Software Engineer</h4>
             <i class="fa fa-calendar"></i> Jan. - July, 2014
             <hr class="visible-xs">
           </div>
 
           <div class="col-md-6 col-md-offset-3 col-sm-8 resume-item wow bounceInUp">
             <h4> Ruby / Ruby on Rails / Javascript </h4>
-            <p>Fill in cool stuff here.</p>
+            <p>In progress.</p>
             <hr class="hidden-xs">
           </div>
 
           <div class="col-md-3 col-sm-4 resume-place wow bounceInRight">
             <h4><i class="fa fa-suitcase"></i> America's Test Kitchen Full Stack
             Developer</h4>
-            <p>Fill in cool stuff here.</p>
             <i class="fa fa-calendar"></i> Jan. - July, 2015
             <hr class="visible-xs">
           </div>
@@ -497,8 +511,8 @@
         <div class="row">
 
           <div class="col-md-6 col-md-offset-3 wow bounceInUp">
-            <a href="#" class="btn btn-default btn-custom-2"><i class="fa
-                fa-cloud-download icon-before"></i> Download Resume</a>
+            <a href="https://www.dropbox.com/s/2tr6hh0ixkbrhwf/Resume.pdf?dl=0" class="btn btn-default btn-custom-2"><i class="fa
+                fa-cloud-download icon-before"></i>Download Resume</a>
           </div>
 
         </div><!-- .row -->
@@ -523,28 +537,28 @@
           </div>
 
           <div class="col-md-4 col-sm-6 wow bounceInLeft">
-            <a href="static/images/p1.jpg" class="pop-up" title="Caption 1">
+            <a href="https://github.com/blakelymadden/hackrpi-webaudit" title="Caption 1">
               <div class="portfolio-item">
                 <div class="portfolio-item-preview">
-                  <img src="static/images/p1.jpg" alt="">
+                  <img src="static/images/p1.png" alt="">
                 </div>
                 <div class="portfolio-item-description">
-                  <h3>Some work</h3>
-                  <p>Category</p>
+                  <h3>Web Audit</h3>
+                  <p>November 2014</p>
                 </div>
               </div>
             </a>
           </div>
 
           <div class="col-md-4 col-sm-6 wow bounceInUp">
-            <a href="https://vimeo.com/45830194" class="video-pop-up" title="Caption 2">
+            <a href="static/images/p2.jpg" class="pop-up" title="Caption 2">
               <div class="portfolio-item">
                 <div class="portfolio-item-preview">
                   <img src="static/images/p2.jpg" alt="">
                 </div>
                 <div class="portfolio-item-description">
-                  <h3>Some work</h3>
-                  <p>Category</p>
+                  <h3>More Coming Soon.</h3>
+                  <p>Attending more hackathons in 2015.</p>
                 </div>
               </div>
             </a>
@@ -557,36 +571,36 @@
                   <img src="static/images/p3.jpg" alt="">
                 </div>
                 <div class="portfolio-item-description">
-                  <h3>Some work</h3>
-                  <p>Category</p>
+                  <h3>More Coming Soon.</h3>
+                  <p>Attending more hackathons in 2015.</p>
                 </div>
               </div>
             </a>
           </div>
 
           <div class="col-md-4 col-sm-6 wow bounceInUp" data-wow-delay=".2s">
-            <a href="static/images/p5.jpg" class="pop-up" title="Caption 4">
+            <a href="static/images/p4.jpg" class="pop-up" title="Caption 4">
               <div class="portfolio-item">
                 <div class="portfolio-item-preview">
-                  <img src="static/images/p5.jpg" alt="">
+                  <img src="static/images/p4.jpg" alt="">
                 </div>
                 <div class="portfolio-item-description">
-                  <h3>Some work</h3>
-                  <p>Category</p>
+                  <h3>More Coming Soon.</h3>
+                  <p>Attending more hackathons in 2015.</p>
                 </div>
               </div>
             </a>
           </div>
 
           <div class="col-md-4 col-sm-6 wow bounceInUp" data-wow-delay=".4s">
-            <a href="static/images/p8.jpg" class="pop-up" title="Caption 5">
+            <a href="static/images/p5.jpg" class="pop-up" title="Caption 5">
               <div class="portfolio-item">
                 <div class="portfolio-item-preview">
-                  <img src="static/images/p8.jpg" alt="">
+                  <img src="static/images/p5.jpg" alt="">
                 </div>
                 <div class="portfolio-item-description">
-                  <h3>Some work</h3>
-                  <p>Category</p>
+                  <h3>More Coming Soon.</h3>
+                  <p>Attending more hackathons in 2015.</p>
                 </div>
               </div>
             </a>
@@ -599,8 +613,8 @@
                   <img src="static/images/p6.jpg" alt="">
                 </div>
                 <div class="portfolio-item-description">
-                  <h3>Some work</h3>
-                  <p>Category</p>
+                  <h3>More Coming Soon.</h3>
+                  <p>Attending more hackathons in 2015.</p>
                 </div>
               </div>
             </a>
@@ -623,13 +637,11 @@
         <div class="row">
 
           <div class="col-md-12 headline wow bounceInLeft">
-            <h2>Contact Us</h2>
+            <h2>Contact Me</h2>
             <p>Drop me a line or give me a ring. Thanks!</p>
           </div>
 
           <div class="col-md-6 wow bounceInUp">
-
-            <p>Fill in something here.</p>
 
             <ul class="icon-list">
               <li><i class="fa fa-fw fa-map-marker"></i>179 Calumet St., Boston,
