@@ -548,7 +548,7 @@ h3 > .fa {
 
 .widget-social li {
 	display: inline-block;
-	margin-right: 5px;
+	margin: 5px 5px 0 0;
 }
 
 .widget-social li a {
