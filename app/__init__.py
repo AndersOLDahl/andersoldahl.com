@@ -12,10 +12,16 @@ def find_key(token):
             return os.environ.get("ACME_KEY_{}".format(n))
 
 
-@app.route('/')
 @app.route("/.well-known/acme-challenge/<token>")
 def acme(token):
     key = find_key(token)
     if key is None:
         abort(404)
     return key
+
+
+@app.route('/')
+
+
+if __name__ == "__main__":
+    app.run()
