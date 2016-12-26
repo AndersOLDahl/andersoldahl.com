@@ -1,4 +1,4 @@
-from app import app
+from andersoldahl import app
 from flask import abort
 import os
 
