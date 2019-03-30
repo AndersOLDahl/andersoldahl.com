@@ -1,9 +1,6 @@
-FROM ubuntu:latest
+FROM python:3.7-alpine
 
 MAINTAINER Anders Dahl "andersoldahl@gmail.com"
-
-RUN apt-get update -y
-RUN apt-get install -y python3 python3-dev python3-pip
 
 COPY . /app
 WORKDIR /app
